@@ -1,0 +1,48 @@
+body #wrapper main {
+}
+
+body #wrapper main .board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(6, 60px);
+  gap: 10px;
+  justify-content: center;
+  margin: 50px 0 30px 0;
+}
+
+body #wrapper main .board .tile {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #dcdcdc;
+  border-radius: 3px;
+  text-align: center;
+}
+
+body #wrapper main .keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  margin: 50px auto;
+}
+body #wrapper main .keyboard .keyboard_row {
+  display: flex;
+  gap: 8px;
+}
+body #wrapper main .keyboard .keyboard_row .keyboard_key {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 60px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 800;
+  background-color: #dcdcdc;
+}
+body #wrapper main .keyboard .keyboard_row .wide {
+  width: 75px;
+}
